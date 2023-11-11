@@ -139,6 +139,11 @@ body {
     .content{
         grid-template-columns: repeat(3, 1fr);
     }
+    .row5{
+        grid-column: 2/ span 2 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (max-width: 430px) {
     .content{
