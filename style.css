@@ -2,33 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
     background-color: #fff;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%-20px;
-    /* Ajustar el ancho del navbar */
-    height: 60px;
-    top: 0;
-    margin: 10px auto;
-    /* Centrar el navbar en la pantalla */
-}
-
-.navbar-logo a img {
-    height: 40px;
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
     gap: 0px;
-    padding-inline-start: 10px;
+    padding-inline-start: 0px;
     align-items: center;
 }
 
@@ -49,33 +30,127 @@ body {
     padding-left: 10px;
 }
 
-.navbar-search input {
+.finder {
     border-radius: 25px;
-    width: 100%;
+    width: 97%;
     height: 40px;
-    padding: 0 20px;
+    padding: 0px 20px;
     background-color: #E9E9E9;
     border: #E9E9E9;
 }
 
 .navbar-profile {
-    list-style: none;
     display: flex;
     gap: 20px;
 }
 
 .navbar-profile a img {
     height: 30px;
+    padding: 5px;
 }
 
-button {
+.navbar-profile div:hover {
+    background-color: grey;
+    border-radius: 100px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cardimage{
+    position: relative;
+    display: inline-block;
+}
+.cardimage img{
+    display: block;
+    width: 90%;
+    border-radius: 25px;
+    margin: 10px;
+    object-fit: cover;
+    transition: filter 0.3s;
+    
+}
+.cardimage button{
+    position: absolute;
+    top: 25px;
+    left: 68%;
+    height: 35px;
+    width: 40%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cardimage:hover .boton {
+    opacity: 1;
+  }
+.cardimage:hover img{
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+#title{
+    font-size: large;
+}
+
+#navbar-pinterest {
+    background-color: #fff;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%-20px;
+    height: 60px;
+    top: 0;
+    z-index: 1000;
+}
+
+#pinterest-icon {
+    height: 40px;
+}
+#btnInicio {
     border-radius: 25px;
     background-color: black;
     color: white;
     height: 48px;
-    width: 60px;
+    width: 70px;
     font-weight: bold;
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
     font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 413px) {
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #notifications{
+        display: none;
+    }
+    #message{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
 }

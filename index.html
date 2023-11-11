@@ -1,33 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <a href="https://www.pinterest.com"><img
-                    src="sources/logo/logo.png" alt="logo"></a>
-        </div>
-        <ul class="navbar-links">
-            <li><a href="#"><button>Inicio</button></a></li>
-            <li><a href="#">Explorar</a></li>
-            <li><a href="#">Crear</a></li>
-        </ul>
-        <div class="navbar-search">
-            <input type="search" name="" id="">
-        </div>
-        <ul class="navbar-profile">
-            <li><a href="#"><img src="sources/logo/notification.png" alt="notification"></a></li>
-            <li><a href="#"><img src="sources/logo/messenger.png" alt="messages"></a></li>
-            <li><a href="#"><img src="sources/logo/user.png" alt="img profile"></a></li>            
-        </ul>
-    </nav>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum pariatur, consequuntur adipisci esse placeat reiciendis accusamus dolorum debitis mollitia repellendus sequi eos iure. Ut nobis praesentium totam consequatur velit.</p>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pinterest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar-pinterest">
+            <div class="navbar-logo">
+                <a href="https://www.pinterest.com">
+                    <img src="sources/logo/logo.png" alt="logo" id="pinterest-icon">
+                </a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#"><button id="btnInicio">Inicio</button></a></li>
+                <li class="nav-link"><a href="#">Explorar</a></li>
+                <li class="nav-link"><a href="#">Crear</a></li>
+            </ul>
+            <div class="navbar-search">
+                <input type="search" name id class="finder">
+            </div>
+            <div class="navbar-profile">
+                <div id="notifications">
+                    <a href="#"><img src="sources/logo/bell.png"alt="notification"></a>
+                </div>
+                <div id="message">
+                    <a href="#"><img src="sources/logo/chat.png" alt="messages"></a>
+                </div>
+                <div id="profile-img"><a href="#">
+                    <img src="sources/logo/user.png"alt="img profile"></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="content">
+                <div class="row">
+                    <div class="cardimage">
+                        <img src="sources/img/1.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div> 
+                    <div class="cardimage">
+                        <img src="sources/img/2.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/3.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/4.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/5.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div> 
+                    <div class="cardimage">
+                        <img src="sources/img/6.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="cardimage">
+                        <img src="sources/img/7.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/8.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/9.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/10.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/11.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/12.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cardimage">
+                        <img src="sources/img/13.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/14.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/15.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/16.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/17.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/18.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cardimage">
+                        <img src="sources/img/19.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/20.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/21.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/22.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/23.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/24.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cardimage">
+                        <img src="sources/img/25.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/26.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/27.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/28.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/29.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                    <div class="cardimage">
+                        <img src="sources/img/30.jpg" alt>
+                        <button class="boton">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
