@@ -140,7 +140,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 430px) {
     .content{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -152,5 +152,10 @@ body {
     }
     .nav-link{
         display: none;
+    }
+    .row5{
+        grid-column: 1/ span 2 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
