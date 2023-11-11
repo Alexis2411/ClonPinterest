@@ -138,6 +138,13 @@ body {
 @media screen and (max-width: 768px) {
     .content{
         grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .row5{
         grid-column: 2/ span 2 ;
@@ -148,6 +155,13 @@ body {
 @media screen and (max-width: 430px) {
     .content{
         grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
     #notifications{
         display: none;
